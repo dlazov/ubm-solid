@@ -1,8 +1,17 @@
-#include <Shape.h>
+#include "Shape.h"
+#include <iostream>
 
-void 
-DrawAllShapes(Shape* list[], int n)
+using namespace std;
+
+void DrawAllShapes(Shape* list[], int n)
 {
 	for(int i = 0; i < n; i++)
-		list[i]->draw();
+		list[i]->Draw();
 }
+
+int main (void) 
+{
+	cout << "Starting DrawAllShapes" << endl;
+	return 0;
+}
+
